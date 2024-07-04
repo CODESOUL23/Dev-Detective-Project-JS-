@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dev Detective Project</title>
+    <script src="https://kit.fontawesome.com/7e79d136c1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <div class="page-content">
+        <div class="header">
+            <p class="heading">DevDetective</p>
+            <div class="mode">
+                <p class="mode-light"></p>
+                <p class="mode-dark"></p>
+                <button class="mode-btn" icon-light>
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+                <button class="mode-btn" icon-dark>
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+        <div class="searchbar-container" data-searchForm>
+            <form>
+                <input type="text" placeholder="Enter Your Github Username..." git-username>
+                <i class="fa-solid fa-magnifying-glass mg-class"></i>
+                <button class="search-btn" search-btn>
+                    Search
+                </button>
+            </form>
+        </div>
+        <div class="user-info-container">
+            <div class="user-info-left">
+                <img user-image>
+            </div>
+            <div class="user-info-right">
+                <div class="nameDate">
+                    <p user-name></p>
+                    <p user-create-date></p>
+                </div>
+                <a user-link style="color: royalblue"></a>
+                <p user-bio></p>
+                <div class="inner-user-content">
+                    <!--Repos-->
+                    <div class="repos">
+                        <p>Repos</p>
+                        <p user-repos style="font-weight: bold"></p>
+                    </div>
+                    <!--Followers-->
+                    <div class="followers">
+                        <p>Followers</p>
+                        <p user-followers style="font-weight: bold"></p>
+                    </div>
+                    <!--Following-->
+                    <div class="following">
+                        <p>Following</p>
+                        <p user-following style="font-weight: bold"></p>
+                    </div>
+                </div>
+
+                <div class="extra-info">
+                    <div class="extra-info-1">
+                        <!--User-Location-->
+                        <div class="user-loaction user">
+                            <i class="fa-solid fa-location-pin"></i>
+                            <p user-location></p>
+                        </div>
+                        <!--User-Bio-->
+                        <div class="user-bio user">
+                            <i class="fa-solid fa-link"></i>
+                            <a user-bio-link style="color: royalblue"></a>
+                        </div>
+                    </div>
+                    <div class="extra-info-2">
+                        <!--User-Twitter Account-->
+                        <div class="user-twitter user">
+                            <i class="fa-brands fa-x-twitter"></i>
+                            <a user-twitter-link style="color: royalblue"></a>
+                        </div>
+                        <!--User-Home-->
+                        <div class="user-home user">
+                            <i class="fa-solid fa-building"></i>
+                            <p company-name></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
